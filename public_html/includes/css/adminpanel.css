@@ -1,0 +1,83 @@
+BODY {
+  background: #FFFFFF;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #000000;
+  margin: 0px;
+}
+
+A {
+  color: #000000;
+  text-decoration: none;
+}
+
+A:hover {
+	text-decoration: underline;
+}
+
+
+TABLE.confirm-msg {
+  background: #FFFFFF;
+}
+
+TR.confirm-msg {
+	background: #FFFFFF;
+}
+
+TD.confirm-msg {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  background: #FFFFFF;
+  color: #222222;
+}
+
+
+TR.list-heading {
+	background: #C7D5F2;
+}
+
+
+
+
+
+
+
+TD.cell-dark {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background: #C7D5F2;
+  color: #000000;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+TD.cell-medium {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background: #D7E3FA;
+  color: #000000;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+TD.cell-light {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 10px;
+  background: #FFFFFF;
+  color: #000000;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+
+
+
+
+.tiny {
+	font-size: 10px;
+}
+
+.error, .refunds {
+	color: #FF3333;
+}
+

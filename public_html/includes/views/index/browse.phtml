@@ -1,0 +1,28 @@
+<?php
+$size = $this->size;
+echo '<ul class="thumbnails">';
+for ($i = 0; $i < $this->options['per_page']; $i++) {
+	foreach ($this->results as $result) {
+		if ($result->$size) {
+			echo '<li class="span3"><div class="thumbnail">';
+			echo '<a href="'.substr($result->$size->clickUri, 0, strpos($result->$size->clickUri, 'sizes/')).'"><img src="'.$result->$size->uri.'" /></a>';
+			echo '<br /><a href="'.substr($result->$size->clickUri, 0, strpos($result->$size->clickUri, 'sizes/')).'" target="blank"" target="_blank"">View on Flickr</a>';
+			echo '</div></li>';
+		}
+	}
+}
+echo '</ul>';
+/*
+		echo '<ul class="media-grid">';
+		foreach ($results as $result) {
+			if ($result->$size) {
+				if ($_REQUEST['debug']) { pre($result); }
+				if ($_REQUEST['debug']) { pre($result->$size); }
+				echo '<li>';
+				echo '<a href="/thePhilippines/action/create_your_own/flickr_imageid/'.$result->id.'"><img src="'.$result->$size->uri.'" /></a>';
+				//echo '<a href="'.substr($result->$size->clickUri, 0, strpos($result->$size->clickUri, 'sizes/')).'" target="blank"" target="_blank"">View on Flickr</a>';
+				echo '</li>';
+			}
+		}
+		echo '</ul>';
+*/

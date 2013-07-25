@@ -1,0 +1,71 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} itsmorefunin\.com [NC,OR]
+RewriteCond %{HTTP_HOST} itsmorefunin\.net [NC,OR]
+RewriteCond %{HTTP_HOST} itsmorefunin\.org [NC,OR]
+RewriteCond %{HTTP_HOST} itsmorefunin\.info [NC,OR]
+RewriteCond %{HTTP_HOST} itsmorefunin\.co [NC,OR]
+RewriteCond %{HTTP_HOST} itsmorefuninthephilippines\.co [NC]
+RewriteRule ^(.*)$ http://itsmoreFun.in/$1?utm_source=%{HTTP_HOST}&utm_medium=domains&utm_campaign=other-domains [L,R=301,QSA]
+
+RewriteCond %{HTTP_HOST} ^www\.itsmorefun\.in [NC]
+RewriteRule ^(.*)$ http://itsmoreFun.in/$1 [L,R=301,QSA]
+
+RewriteCond %{HTTP_HOST} itsmorefun\.in [NC]
+RewriteRule ^$ /thePhilippines [R=301,NC,L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{HTTP_HOST} itsmorefun\.in [NC]
+RewriteRule ^thePhilippines(.*) /itsmorefun.in.php?query=$1 [NC,L,QSA]
+
+RewriteRule ^visitfeed/(.+) visit_feed.php?id=$1 [NC,L]
+RewriteRule ^visitstory/(.+) visit_post.php?uuid=$1 [NC,L]
+RewriteRule ^visit/(.+) visit.php?slug=$1 [NC,L]
+
+RewriteRule ^buzz/(.+).html buzz_talk.php?kw=$1 [NC,L]
+RewriteRule ^sources/(.+).html source_info.php?slug=$1 [NC,L]
+RewriteRule ^sources/ sources.php [NC,L]
+RewriteRule ^buzz/ buzz.php [NC,L]
+
+RewriteRule ^about/ about.php [NC,L]
+RewriteRule ^contact/ contact.php [NC,L]
+
+RewriteRule ^sitemap.xml sitemap.php [NC,L]
+
+#FrontController
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . /index.php [L]
+
+ErrorDocument 404 /error.php?error=404
+ErrorDocument 406 /error.php?error=406
+ErrorDocument 407 /error.php?error=407
+ErrorDocument 408 /error.php?error=408
+ErrorDocument 409 /error.php?error=409
+ErrorDocument 410 /error.php?error=410
+ErrorDocument 411 /error.php?error=411
+ErrorDocument 412 /error.php?error=412
+ErrorDocument 413 /error.php?error=413
+ErrorDocument 414 /error.php?error=414
+ErrorDocument 415 /error.php?error=415
+ErrorDocument 416 /error.php?error=416
+ErrorDocument 417 /error.php?error=417
+ErrorDocument 418 /error.php?error=418
+ErrorDocument 419 /error.php?error=419
+ErrorDocument 420 /error.php?error=420
+ErrorDocument 421 /error.php?error=421
+ErrorDocument 422 /error.php?error=422
+ErrorDocument 423 /error.php?error=423
+ErrorDocument 424 /error.php?error=424
+ErrorDocument 425 /error.php?error=425
+ErrorDocument 426 /error.php?error=426
+ErrorDocument 501 /error.php?error=501
+ErrorDocument 502 /error.php?error=502
+ErrorDocument 504 /error.php?error=504
+ErrorDocument 505 /error.php?error=505
+ErrorDocument 506 /error.php?error=506
+ErrorDocument 507 /error.php?error=507
+ErrorDocument 508 /error.php?error=508
+ErrorDocument 509 /error.php?error=509
+ErrorDocument 510 /error.php?error=510

@@ -1,0 +1,53 @@
+TABLE.errorbox { 
+	background-color: #FF0000;  
+	margin: 5px;	
+}
+
+TD.errorbox-title { 
+	font-family: verdana,arial;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #000000;
+	background-color: #FF9393;  	
+	height: 23px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+TD.errorbox-messages 	{ 
+	background-color: #FFDEDE;  
+	font-family: verdana,arial;
+	font-size: 8pt;
+	color: #FF0000;	
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 8px;	
+	padding-bottom: 8px;
+
+}
+
+TABLE.successbox { 
+	background-color: #339933;  
+	margin: 5px;
+}
+
+TD.successbox-title { 
+	font-family: verdana,arial;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #00BB55;  	
+	height: 23px;
+	padding-left: 5px;
+	padding-right: 5px;}
+
+TD.successbox-messages 	{ 
+	background-color: #ABDEB7;  
+	font-family: verdana,arial;
+	font-size: 8pt;
+	color: #339933;	
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 8px;	
+	padding-bottom: 8px;
+}
